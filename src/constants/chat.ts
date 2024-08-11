@@ -40,9 +40,10 @@ export const modelOptions: ModelOptions[] = [
   'gpt-4o-2024-08-06',
   'gpt-4o-mini',
   'gpt-4o-mini-2024-07-18',
-  // 'gpt-3.5-turbo-0301',
-  // 'gpt-4-0314',
-  // 'gpt-4-32k-0314',
+  'claude-3-haiku-20240307',
+  'claude-3-sonnet-20240229',
+  'claude-3-opus-20240229',
+  'claude-3-5-sonnet-20240620'
 ];
 
 export const defaultApiVersion = '2024-04-01-preview';
@@ -71,6 +72,10 @@ export const modelMaxToken: { [key: string]: number } = {
   'gpt-4o-2024-08-06': 128000,
   'gpt-4o-mini': 128000,
   'gpt-4o-mini-2024-07-18': 128000,
+  'claude-3-haiku-20240307': 200000,
+  'claude-3-sonnet-20240229': 200000,
+  'claude-3-opus-20240229': 200000,
+  'claude-3-5-sonnet-20240620': 200000
 };
 
 export const modelCost: ModelCost = {
@@ -162,6 +167,22 @@ export const modelCost: ModelCost = {
     prompt: { price: 0.00015, unit: 1000 },
     completion: { price: 0.0006, unit: 1000 },
   },
+  'claude-3-haiku-20240307': {
+    prompt: { price: 0, unit: 1000 },
+    completion: { price: 0, unit: 1000 },
+  },
+  'claude-3-sonnet-20240229': {
+    prompt: { price: 0, unit: 1000 },
+    completion: { price: 0, unit: 1000 },
+  },
+  'claude-3-opus-20240229': {
+    prompt: { price: 0, unit: 1000 },
+    completion: { price: 0, unit: 1000 },
+  },
+  'claude-3-5-sonnet-20240620': {
+    prompt: { price: 0, unit: 1000 },
+    completion: { price: 0, unit: 1000 },
+  }
 };
 
 export const defaultUserMaxToken = 4000;
@@ -245,6 +266,10 @@ export const modelTypes: { [key: string]: string } = {
   'gpt-4o-2024-05-13': 'image',
   'gpt-4o-2024-08-06': 'image',
   'gpt-4-vision-preview': 'image',
+  'claude-3-haiku-20240307': 'image',
+  'claude-3-sonnet-20240229': 'image',
+  'claude-3-opus-20240229': 'image',
+  'claude-3-5-sonnet-20240620': 'image'
 };
 
 export const _defaultMenuWidth = 260;
