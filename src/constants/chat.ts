@@ -259,18 +259,7 @@ export const codeLanguageSubset = [
   'yaml',
 ];
 
-export const modelTypes: { [key: string]: string } = {
-  'gpt-4o-mini-2024-07-18': 'image',
-  'gpt-4o-mini': 'image',
-  'gpt-4o': 'image',
-  'gpt-4o-2024-05-13': 'image',
-  'gpt-4o-2024-08-06': 'image',
-  'gpt-4-vision-preview': 'image',
-  'claude-3-haiku-20240307': 'image',
-  'claude-3-sonnet-20240229': 'image',
-  'claude-3-opus-20240229': 'image',
-  'claude-3-5-sonnet-20240620': 'image'
-};
+export const modelTypes: { [key: string]: string } = {};
 
 export const _defaultMenuWidth = 260;
 export const _defaultDisplayChatSize = false;
